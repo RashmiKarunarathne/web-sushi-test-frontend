@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  text-align: left;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fafafa;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(6px + 2vmin);
+  color: black;
+}
+
+.card {
+  background-color: rgb(222, 246, 250);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.space {
+  height: 100px;
+} 
+
+label {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.records-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.records-table th,
+.records-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.records-table th {
+  background-color: #fafafa;
+}
+
+.records-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.records-table .edit-btn {
+  padding: 6px 10px;
+  margin-right: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.records-table .delete-btn {
+  padding: 6px 10px;
+  margin-right: 5px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.records-table .edit-btn:hover,
+.records-table .delete-btn:hover {
+  opacity: 0.8;
 }
